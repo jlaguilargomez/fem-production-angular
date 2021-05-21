@@ -88,7 +88,10 @@
               "apps/dashboard/tsconfig.spec.json",
               "apps/dashboard/tsconfig.editor.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/dashboard/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/dashboard/**/*"
+            ]
           }
         },
         "test": {
@@ -121,8 +124,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/dashboard-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/dashboard-e2e/**/*"]
+            "tsConfig": [
+              "apps/dashboard-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/dashboard-e2e/**/*"
+            ]
           }
         }
       }
@@ -140,7 +148,9 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"]
+            "assets": [
+              "apps/api/src/assets"
+            ]
           },
           "configurations": {
             "production": {
@@ -169,7 +179,10 @@
               "apps/api/tsconfig.app.json",
               "apps/api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/api/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/api/**/*"
+            ]
           }
         },
         "test": {
@@ -194,7 +207,10 @@
               "libs/api-interfaces/tsconfig.lib.json",
               "libs/api-interfaces/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api-interfaces/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api-interfaces/**/*"
+            ]
           }
         },
         "test": {
@@ -219,7 +235,10 @@
               "libs/core-data/tsconfig.lib.json",
               "libs/core-data/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/core-data/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/core-data/**/*"
+            ]
           }
         },
         "test": {
@@ -249,7 +268,10 @@
               "libs/core-state/tsconfig.lib.json",
               "libs/core-state/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/core-state/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/core-state/**/*"
+            ]
           }
         },
         "test": {
@@ -279,7 +301,10 @@
               "libs/material/tsconfig.lib.json",
               "libs/material/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/material/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/material/**/*"
+            ]
           }
         },
         "test": {
@@ -298,7 +323,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": false
   },
   "schematics": {
     "@nrwl/workspace": {
